@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion👗👖👠</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      body {
+        background: #7783ea;
+      }
+      .container {
+        background: rgb(242, 240, 238);
+        max-width: 600px;
+        margin: 60px auto;
+        padding: 30px;
+        border-radius: 10px;
+        font-size: 24px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #007791;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 100px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #021e59;
+        color: #f2f0ee;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 30px;
+      }
+      .transform-image {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .transform-image:hover {
+        transform: scale(1.2);
+        filter: contrast(80%);
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .grid img {
+        border-radius: 8px;
+        width: 100%;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .theme-button {
+        display: block;
+        background: #f2f0ee;
+        color: black;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 20px auto;
+        font-size: 16px;
+        font-weight: 100px;
+        font-family: "Times New Roman", Times, serif;
+        transition: all 150ms ease-in-out;
+      }
+      .theme-button:hover {
+        background: #1f3291;
+        color: white;
+      }
+      .dark {
+        background: #021e59;
+      }
+      .dark .container {
+        background-color: #1f3291;
+      }
+      .dark footer {
+        color: #f2f0ee;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="theme-button">CHANGE THEME</button>
+    <div class="container">
+      <h1>Elegant Fashion Styles</h1>
+      <h2>My Favourite hobby</h2>
+      <p>
+        Elegant Fashion is thus to an observer, a style which has an embodiment
+        of sophistication though endowed with gracefulness, leaving a stamp of
+        seemingly effortless lasting beauty that is simply classic and reflects
+        an unforgiving touch of luxury.
+      </p>
+      <a
+        href="https://www.vivienlauren.co.uk/post/
+        what-is-elegant-fashion#:~:text=Elegant%20Fashion%20is%20thus%20to,an%20unforgiving%20touch%20of%20luxury."
+        target="_blank"
+      >
+        <img
+          src="https://theladylovesliving.com/wp-content/uploads/2022/01/designer-luxury-brands-an-elegant-woman-should-know.png"
+          alt=""
+          class="transform-image"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="http://5.imimg.com/data5/ECOM/Default/2023/6/317045146/AG/AJ/OK/9422220/women-elegant-maxi-dress-long-sleeve-party-dress-women-fashion-sparkling-cold-shoulder-232-500x500.jpg"
+          alt=""
+        />
+        <img
+          src="https://i5.walmartimages.com/seo/SHOPESSA-Business-Suit-Sets-for-Women-Elegant-Long-Sleeve-Solid-Suit-Pants-Tops-Dressy-Casual-Interview-Clothes_b0dee41b-550a-4373-92ab-ea6d48b75098.a1d1b3d53c7fa0d2727abac6c5c4d8a0.jpeg"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0256/9787/8082/t/5/assets/wwwibtimes-1658168069656.png?v=1658168089"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0256/9787/8082/t/5/assets/b03afc28713b25a635338e516c0ba51dukfashionlondonfashion-1658145469942.png?v=1658145621"
+          alt=""
+        />
+        <img
+          src="https://d2line.com/thatlook/wp-content/uploads/sites/4/2022/03/d2line-pattern-elegance-beige.jpg"
+          alt=""
+        />
+      </div>
+      <button>ORDER NOW</button>
+    </div>
+    <footer>Coded by: Assumpta Uwamariya with HTML CSS & JavaScript 👩‍💻</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
