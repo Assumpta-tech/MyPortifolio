@@ -91,6 +91,17 @@ img:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
 }
+.grid a {
+  text-decoration: none;
+}
+.price {
+  text-align: center;
+  color: black;
+  background: #80d0c7;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 8px;
+}
 footer {
   text-align: center;
   margin: 80px;
@@ -100,4 +111,65 @@ footer a {
   color: black;
   padding: 20px;
   margin: 20px;
+}
+/*SIGN UP FORM*/
+body {
+  background: #13547a;
+}
+.signup-container {
+  background: #80d0c7;
+  margin: 40px auto;
+  border-radius: 10px;
+  width: 600px;
+}
+.signup-container hr {
+  border: 1px solid #13547a;
+}
+.details {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 100px;
+  color: #13547a;
+}
+.details-container {
+  display: grid;
+  padding: 60px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.sub-details {
+  text-align: center;
+}
+.sub-details a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+}
+label,
+input {
+  padding: 10px;
+  margin: 8px;
+}
+.submit {
+  padding: 10px;
+  margin: 8px;
+  width: 100px;
+  font-size: 18px;
+  background: #13547a;
+  border: 1px solid #13547a;
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+.submit:hover {
+  cursor: pointer;
+}
+.details-container p a {
+  text-decoration: none;
+  color: #13547a;
+  padding: 5px;
+  font-weight: bold;
 }
