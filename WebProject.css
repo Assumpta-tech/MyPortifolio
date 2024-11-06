@@ -3,6 +3,7 @@ body {
   margin: 20px;
 }
 .logo {
+  text-align: top left;
   width: 64px;
   height: 64px;
   background: rgb(214, 254, 254);
