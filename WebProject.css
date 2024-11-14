@@ -1,153 +1,86 @@
 body {
-  margin: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.logo {
-  text-align: top left;
-  width: 64px;
-  height: 64px;
-  background: rgb(214, 254, 254);
-  border-radius: 50%;
-  border: 1px solid rgb(214, 254, 254);
-  font-size: 14px;
-  font-weight: 12px;
-  font-family: sans-serif;
-  padding: 10px;
-}
-.body-container {
-  background: radial-gradient(
-    253px at 12.6% 77.9%,
-    rgb(221, 255, 214) 0.3%,
-    rgb(214, 254, 254) 90.5%
-  );
+/*account page*/
+.signUp-container {
+  display: block;
   margin: 60px auto;
-  padding: 60px;
+  padding: 30px 10px;
+  background: #f95335;
+  width: 600px;
+  letter-spacing: 0.8px;
   border-radius: 8px;
 }
-.header-nav1 {
+.signUp-container li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+}
+.signUp-container h2 {
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.signUp-container li a {
+  color: black;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 8px;
+}
+.signUp-container li a:hover {
+  color: white;
+}
+.signUp-container h2,
+p,
+ul {
   text-align: center;
 }
-#search {
-  margin-bottom: 20px;
-  padding: 10px;
+.signUp-container p,
+a {
+  text-decoration: none;
   color: black;
-  font-weight: bold;
-  font-size: 14px;
-  background: rgb(214, 254, 254);
-  border: 1px solid #80d0c7;
-  border-radius: 10px;
 }
-.search {
-  background: #80d0c7;
-  padding: 10px;
-  border: 1px solid #80d0c7;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
+.signUp-containe p,
+a:hover {
   cursor: pointer;
+  color: white;
 }
-.header-nav2 {
-  text-align: center;
-}
-.navigation {
-  margin: 25px;
-  padding: 15px;
-  font-size: 18;
-  font-weight: 10px;
-  border-radius: 10px;
-  border: 1px solid rgb(214, 254, 254);
-  background: rgb(214, 254, 254);
-  transition: all 150ms ease-in-out;
-}
-.navigation:hover {
-  background: #80d0c7;
-  transform: scale(1);
-}
-.navigation a {
-  text-decoration: none;
-  color: black;
-}
-.body-container header hr {
-  margin: 15px;
-  border: 1px solid #80d0c7;
-}
-header {
-  margin-bottom: 10px;
-}
-img {
-  margin-top: 10px;
-  width: 100%;
-  height: 44.5vh;
-  width: 22vw auto;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: all 200ms ease-in-out;
-}
-img:hover {
-  filter: contrast(50%);
-  transform: scale(1.2);
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 25px;
-}
-.grid a {
-  text-decoration: none;
-}
-.price {
-  text-align: center;
-  color: black;
-  background: #80d0c7;
-  padding: 10px;
-  margin: 30px;
-  border-radius: 8px;
-}
-footer {
-  text-align: center;
-  margin: 80px;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin: 20px;
-}
+
 /*SIGN UP FORM*/
 body {
-  background: #13547a;
-}
-.signup-container {
-  background: #80d0c7;
-  margin: 40px auto;
-  border-radius: 10px;
-  width: 600px;
+  background: white;
 }
 .signup-container hr {
-  border: 1px solid #13547a;
+  color: white;
+}
+.signup-container {
+  background: #f95335;
+  margin: 40px auto;
+  border-radius: 10px;
+  width: 400px;
+}
+.signup-container hr {
+  border: 1px solid #f95335;
 }
 .details {
   text-align: center;
-  padding: 20px;
+  padding: 8px;
   font-size: 24px;
   font-weight: 100px;
-  color: #13547a;
+  color: white;
+  margin: 0;
 }
 .details-container {
   display: grid;
-  padding: 60px;
-  width: 300px;
+  padding: 30px;
+  width: 250px;
   margin: 0 auto;
   font-size: 18px;
 }
 .sub-details {
   text-align: center;
-}
-.sub-details a {
-  text-decoration: none;
-  padding: 10px;
-  color: black;
-  font-size: 18px;
-  font-weight: normal;
 }
 label,
 input {
@@ -155,21 +88,16 @@ input {
   margin: 8px;
 }
 .submit {
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
   width: 100px;
-  font-size: 18px;
-  background: #13547a;
-  border: 1px solid #13547a;
+  font-size: 14px;
+  background: white;
+  border: 1px solid white;
   border-radius: 8px;
   transition: all 150ms ease-in-out;
 }
 .submit:hover {
   cursor: pointer;
-}
-.details-container p a {
-  text-decoration: none;
-  color: #13547a;
-  padding: 5px;
-  font-weight: bold;
+  color: #f95335;
 }

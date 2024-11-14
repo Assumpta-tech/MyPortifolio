@@ -1,0 +1,141 @@
+body {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1200px;
+  overflow-x: hidden;
+  object-fit: cover;
+  background: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  position: fixed;
+  background: #f95335;
+  width: 100%;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  position: relative;
+  top: 15px;
+  padding: 5px;
+  color: white;
+}
+.header-nav1 {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+#search {
+  width: 500px;
+}
+
+.header-nav1 input,
+button {
+  padding: 8px;
+  margin: 5px;
+  background: white;
+  border-radius: 8px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.search:hover {
+  cursor: pointer;
+  background: white;
+  color: #f95335;
+}
+.header-nav2 {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  font-size: 24px;
+}
+.navigation {
+  background: white;
+  margin: 0 40px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.navigation:hover {
+  border: 1px solid #f95335;
+  cursor: pointer;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+.navigation a:hover {
+  color: #f95335;
+}
+section {
+  margin: 0 auto;
+  padding: 200px 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+img {
+  width: 22vw;
+  height: 44vh;
+  object-fit: contain;
+  margin: 5px;
+  transition: all 200ms ease-in-out;
+}
+img:hover {
+  filter: contrast(70%);
+  transform: scale(1.2);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.img {
+  display: grid;
+  background: white;
+  grid-gap: 0px;
+}
+.img p {
+  margin: 5px;
+  color: black;
+}
+
+.img .price {
+  padding: 10px 0px;
+  width: 80px;
+  height: 20px;
+  color: #f95335;
+}
+.img .price:hover {
+  cursor: pointer;
+  border: 2px solid #f95335;
+}
+footer {
+  padding: 90px;
+  margin-top: -10px;
+  height: 44vh;
+  margin-bottom: 0px;
+  background: rgb(8, 115, 164);
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.top {
+  text-align: center;
+  padding: 10px;
+  margin: -90px;
+  color: white;
+}
+.top a:hover {
+  color: white;
+}
+.footer {
+  margin-top: 110px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}

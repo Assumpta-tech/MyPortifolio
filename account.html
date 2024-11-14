@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link rel="stylesheet" href="WebProject.css" />
+  </head>
+  <body>
+    <div class="signUp-container">
+      <h2>CREATE &nbsp; ACCOUNT</h2>
+      <p class="detail">What defines you?</p>
+      <ul>
+        <li><a href="SignUp.html">BUYER</a></li>
+        <span>/</span>
+        <li><a href="SignUp.html">SELLER</a></li>
+      </ul>
+      <p class="login">Already have an account!👉 <a href="">LOGIN</a></p>
+    </div>
+    <script>
+      $("navigation").click(function () {
+        var div = $("div");
+        div.animate({ left: "100px" }, "slow");
+        div.animate({ fontSize: "300cm" }, "slow");
+      });
+    </script>
+  </body>
+</html>
