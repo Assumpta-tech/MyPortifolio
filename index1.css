@@ -1,0 +1,35 @@
+.navbar,
+.navbar-brand {
+  background: orange;
+  color: white;
+}
+.navbar .navbar-brand:hover {
+  border: none;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+  border: 1px solid white;
+}
+.dropdown-menu a {
+  color: black;
+}
+.btn {
+  background: white;
+  border: 1px solid orange;
+  color: black;
+}
+.btn:hover {
+  background: Orange;
+}
+form .btn {
+  background: white;
+  transition: all 150ms ease-in-out;
+}
+.btn,
+.btn-outline:hover {
+  background: orange;
+  border: 1px solid white;
+}
