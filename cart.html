@@ -4,28 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/js/bootstrap.bundle.js" />
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="main.css" />
     <title>My Cart</title>
 
     <style>
-      .navbar,
-      .navbar-brand {
-        background: orange;
-        color: white;
-      }
-      .navbar .navbar-brand:hover {
-        border: none;
-      }
-      .navbar a {
-        color: white;
-      }
-      .navbar a:hover {
-        color: white;
-        border: 1px solid white;
-      }
-      .dropdown-menu a {
-        color: black;
-      }
       .btn {
         background: white;
         border: 1px solid orange;
@@ -43,131 +26,36 @@
         background: orange;
         border: 1px solid white;
       }
-      .gradient-custom {
-        background: rgb(201, 132, 4);
-      }
       button.btn {
         background: orange;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ISOKO🛒</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 x-5">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                PRODUCTS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Appliances</a></li>
-                <li><a class="dropdown-item" href="#">Clothing</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Accessory equipment</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Phones</a></li>
-                <li><a class="dropdown-item" href="#">Shoes</a></li>
-                <li><a class="dropdown-item" href="#">Bags</a></li>
-                <li><a class="dropdown-item" href="#">Cars</a></li>
-
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Other</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                SERVICES
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Financial Services</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Information Technology Support</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"> Personal Services</a>
-                </li>
-                <li><a class="dropdown-item" href="#"> Fitness Training</a></li>
-                <li><a class="dropdown-item" href="#"> Catering</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Other</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                SIGNUP
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="SignUpAcc.html">Buyer</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="SignUpAcc1.html">Seller</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="login.html">Login</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline" type="submit">Search</button>
-          </form>
+    <div id="logo">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">ISOKO🛒</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
+      </nav>
+    </div>
+    <header>
+      <div class="cartIcon">
+        <img src="images/cart.png" alt="" />
+        <div class="totalInCart">0</div>
       </div>
-    </nav>
+    </header>
     <section class="h-100 gradient-custom">
       <div class="container py-5">
         <div class="row d-flex justify-content-center my-4">
@@ -186,7 +74,7 @@
                       data-mdb-ripple-color="light"
                     >
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                        src="images/12a.webp"
                         class="w-100"
                         alt="Blue Jeans Jacket"
                       />
@@ -275,10 +163,7 @@
                       class="bg-image hover-overlay hover-zoom ripple rounded"
                       data-mdb-ripple-color="light"
                     >
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
-                        class="w-100"
-                      />
+                      <img src="images/13a.webp" class="w-100" />
                       <a href="#!">
                         <div
                           class="mask"
@@ -374,12 +259,6 @@
                 <img
                   class="me-2"
                   width="45px"
-                  src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
-                  alt="American Express"
-                />
-                <img
-                  class="me-2"
-                  width="45px"
                   src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
                   alt="Mastercard"
                 />
@@ -408,7 +287,7 @@
                   <li
                     class="list-group-item d-flex justify-content-between align-items-center px-0"
                   >
-                    Shipping
+                    Delivery
                     <span>Gratis</span>
                   </li>
                   <li
@@ -438,5 +317,6 @@
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

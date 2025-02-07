@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "product name 1",
+    "price": 50,
+    "image": "images/13a.webp"
+  },
+  {
+    "id": 2,
+    "name": "product name 2",
+    "price": 60,
+    "image": "images/12a.webp"
+  },
+  {
+    "id": 3,
+    "name": "product name 3",
+    "price": 30,
+    "image": "images/7.webp"
+  },
+  {
+    "id": 4,
+    "name": "product name 4",
+    "price": 80,
+    "image": "images/watch.avif"
+  },
+  {
+    "id": 5,
+    "name": "product name 5",
+    "price": 40,
+    "image": "images/6.webp"
+  },
+  {
+    "id": 6,
+    "name": "product name 6",
+    "price": 20,
+    "image": "images/10.webp"
+  },
+  {
+    "id": 7,
+    "name": "product name 7",
+    "price": 600,
+    "image": "images/25.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "product name 8",
+    "price": 50,
+    "image": "images/cups.avif"
+  },
+  {
+    "id": 9,
+    "name": "product name 9",
+    "price": 10,
+    "image": "images/14.jpeg"
+  }
+]
